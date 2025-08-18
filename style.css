@@ -107,6 +107,10 @@ input {
     cursor: pointer;
     border-radius: 5px;
 }
+.red-tn-sm a{
+    color: white;
+    text-decoration: none;
+}
 
 .eng {
     background-color: black;
@@ -116,7 +120,7 @@ input {
     border-radius: 5px;
 }
 
-.red-btn-sm {
+.red-tn-sm {
     color: white;
     background-color: red;
     padding: 10px 15px;
@@ -384,4 +388,11 @@ footer {
         height: auto;
     }
     
+}
+@media screen and (max-width: 472px) {
+   .hero> :nth-child(1) {
+    font-weight: 800;
+    font-size: 40px;
+    max-width: 500px;
+}
 }
