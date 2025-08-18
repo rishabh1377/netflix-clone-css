@@ -2,7 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif ,'Netflix Sans', Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;;
+    font-family: 'Poppins', sans-serif, 'Netflix Sans', Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    ;
 }
 
 body {
@@ -136,7 +137,7 @@ input {
 .data {
 
     width: 100%;
-    height: 50vh;
+    height: 43vh;
     position: relative;
     z-index: 1;
 }
@@ -149,6 +150,23 @@ input {
     justify-content: center;
     align-items: center;
 
+}
+
+.boxes a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.boxes:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 .databox1 {
@@ -171,6 +189,10 @@ input {
     height: 31vh;
     border: none;
     border-radius: 0.3rem;
+    position: relative;
+    /* overflow: hidden;  */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 
 }
 
@@ -227,130 +249,213 @@ input {
 
 
 }
-.join{
+
+.join {
     display: flex;
     gap: 20px;
     margin: 70px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 35vh;
+    height: 30vh;
 
 
 }
+
 .wrapper {
-        min-width: 280px;
+    width: 256px;
     height: 32vh;
     border: none;
-    border-radius: 0.3rem;
-    background-color:  rgb(17 44 75 / 87%);
-    
+    border-radius: 1rem;
+    background-color: rgb(17 44 75 / 87%);
+
+
 }
-   
-.more
-{
+
+.more {
     width: 88%;
     margin: auto;
-    
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
     color: white;
-    
     position: relative;
-  
     display: flex;
-
     align-items: center;
 }
 
-@media(max-width:850px) {
-    .data {
-        height: auto;
-    }
+.wrapper span {
+    display: flex;
+}
+
+.spn1 {
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    padding: 10px;
+}
+
+.spn2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.faq {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    gap: 15px;
+    display: grid;
+}
+
+.faq-q {
+    width: 80vw;
+    height: 100%;
+    display: flex;
+
+    justify-content: left;
+    align-items: center;
+    color: white;
+    margin: auto;
+
+}
+
+.faq-box {
+    
+    background-color: rgba(48, 47, 47, 0.778);
+    color: white;
+    width: 80%;
+    height: 68px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq-box span{
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 25px;
+}
+.faq-box:hover{
+    background-color: rgba(128, 122, 122, 0.9);
+    cursor: pointer;
+}
+footer {
+    color:white;
+    margin : auto;
+    max-width: 60vw;
+    height: 40vh;
+    
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    gap: 20px;
+    
+}
+.footer-item{
+        display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 29px;
+    
+}
+.questions{
+        margin-top: 64px;
+    font-size: 20px;
 }
 
 
 
-
-
-
-@media (max-width: 1024px) {
-    .hero> :nth-child(1) {
-        font-size: 36px;
-        max-width: 500px;
+@media (max-width: 1020px) {
+    .hero span {
+        font-size: 1.4rem;
+        text-align: center;
+        display: block;
     }
 
-    .hero> :nth-child(2) {
-        font-size: 20px;
+    .inpt {
+        flex-direction: column;
+        gap: 0.6rem;
     }
 
-    .hero> :nth-child(3) {
-        font-size: 18px;
+    .boxes {
+        width: 30vw !important;
+        height: 24vh !important;
+    }
+
+    .digit {
+        font-size: 2rem !important;
     }
 }
 
 @media (max-width: 768px) {
     .nav {
         flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .hero span {
+        font-size: 1.2rem;
+        text-align: center;
+        display: block;
+    }
+
+    .boxes {
+        width: 40vw !important;
+        height: 22vh !important;
+    }
+
+    .digit {
+        font-size: 1.8rem !important;
+    }
+
+    .databox {
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        gap: 10px;
-    }
-
-    .hero> :nth-child(1) {
-        font-size: 28px;
-        max-width: 100%;
-    }
-
-    .hero> :nth-child(2) {
-        font-size: 18px;
-    }
-
-    .hero> :nth-child(3) {
-        font-size: 16px;
-    }
-
-    input {
-        width: 100%;
-    }
-
-    .red-btn {
-        width: 100%;
+        gap: 1rem;
     }
 }
 
 @media (max-width: 480px) {
-    .logo {
-        width: 120px;
+    .hero span {
+        font-size: 1rem;
+        padding: 0 1rem;
+        text-align: center;
+        display: block;
     }
 
-    .hero {
-        gap: 15px;
+    .inpt input {
+        width: 100%;
     }
 
-    .hero> :nth-child(1) {
-        font-size: 22px;
+    .inpt button {
+        width: 100%;
     }
 
-    .hero> :nth-child(2) {
-        font-size: 16px;
-    }
-
-    .hero> :nth-child(3) {
-        font-size: 14px;
-    }
-
-    input,
-    .red-btn {
-        font-size: 16px;
-        padding: 12px;
-    }
-}
-@media (max-width: 1335px) {
     .boxes {
-        height: auto;
+        width: 80vw !important;
+        height: 20vh !important;
     }
-    .join{
-        height: auto;
+
+    .digit {
+        font-size: 1.5rem !important;
+    }
+
+    .databox {
+        flex-direction: column;
+        align-items: center;
     }
 }
