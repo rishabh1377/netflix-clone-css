@@ -3,12 +3,7 @@
 A simple Netflix landing page clone built using only HTML & CSS.
 This project is focused on practicing frontend design, responsive layouts, and styling techniques.
 
-🚀 Demo
 
-🔗 Live Demo (Replace with your GitHub Pages link)
-
-
-(Add a screenshot of your project here)
 
 📌 Features
 
